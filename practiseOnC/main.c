@@ -22,7 +22,6 @@ void run(){
         printf("ERROR Opening %s\n", mousePath);
    }
 
-   //printf("Relative mouse position (x, y) since program start:\n\n");
 
 
    int currentX = 0;
@@ -32,6 +31,7 @@ void run(){
 
    int byte;
    int i=0;
+   //This loop provides continuous mouse control
    while(1){
       i++;
       byte = read(fd,dataArray,sizeof(dataArray));
